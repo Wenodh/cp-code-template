@@ -1,6 +1,5 @@
 # cp-code-template
 Common CP coding templates
-
 ## Two pointers: one input, opposite ends
 ```
 let fn = arr => {
@@ -98,15 +97,16 @@ let fn = head => {
 }
 ```
 ## Reversing a linked list
+![Reversing a linked list](https://i.giphy.com/media/d9TdpWRIDu9CXONF8P/giphy.gif)
 ```
 let fn = head => {
     let curr = head;
     let prev = null;
     while (curr) {
-        let nextNode = curr.next;
+        let temp = curr.next;
         curr.next = prev;
         prev = curr;
-        curr = nextNode;
+        curr = temp;
     }
     return prev;
 }
@@ -143,6 +143,7 @@ let fn = arr => {
 }
 ```
 ## Binary tree: DFS (recursive)
+![DFS](https://codeforces.com/predownloaded/8d/be/8dbe5d89e58b67f3d8e4d8e0e8eb3358ba921b28.png)
 ```
 let dfs = root => {
     if (!root) {
@@ -156,6 +157,7 @@ let dfs = root => {
 }
 ```
 ## Binary tree: DFS (iterative)
+![DFS](https://www.bing.com/th/id/OGC.680a6ee0d310ba41ad8f2483d65bdbb3?pid=1.7&rurl=https%3a%2f%2fwww.codesdope.com%2fstaticroot%2fimages%2falgorithm%2fdfs.gif&ehk=yKw%2bMkJGnXADPcTPu1fzMMllsu%2bCvZSoSE8nVnN25Nk%3d)
 ```
 let dfs = root => {
     let stack = [root];
