@@ -176,6 +176,7 @@ let dfs = root => {
 }
 ```
 ## Binary tree: BFS
+![BFS](https://www.codesdope.com/staticroot/images/algorithm/bfs.gif)
 ```
 let fn = root => {
     let queue = [root];
