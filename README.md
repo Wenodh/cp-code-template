@@ -15,6 +15,8 @@ let fn = arr => {
     return ans;
 }
 ```
+Sample problems
+1. [Palindrome](https://leetcode.com/problems/valid-palindrome/description/?envType=study-plan-v2&envId=top-interview-150)
 ## Two pointers: two inputs, exhaust both
 ```
 let fn = (arr1, arr2) => {
